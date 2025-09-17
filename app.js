@@ -35,6 +35,14 @@ console.log(student.rollno);
 });
 
 
+// map function(different new array)
+let n=[6,7,8,9,10];
+let d=n.map((v)=>{
+    console.log(v);
+
+});
+
+
 
 
 
