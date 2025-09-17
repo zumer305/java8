@@ -16,4 +16,26 @@ arr.forEach((el)=>{
 // };
 // arr.forEach(print);
 
+let array=[
+    {
+name:"zumer",
+rollno:88.1,
+    },
+    {
+name:"zumer2",
+rollno:89.2,
+    },
+    {
+name:"zumer3",
+rollno:90.5,
+    },
+];
+array.forEach((student)=>{
+console.log(student.rollno);
+});
+
+
+
+
+
 
