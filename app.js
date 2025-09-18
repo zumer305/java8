@@ -92,19 +92,32 @@ console.log([1,2,4].reduce((min,el)=>{if(min>el)return el;
 }));  
 
 
-// defauly value set in parameter
+// default value set in parameter
 function summ(a,b=4){
     return a+b;
 }
 console.log(summ(1,3));
 console.log(summ(1));
 
-// defauly value set in parameter
+
+// default value set in parameter
 function sum(a=4,b){
     return a+b;
 }
 console.log(sum(1,3));
 console.log(sum(1));  //undefine bcz order in parameter matters
+
+
+// spread ...
+console.log(..."zumer niaz");
+
+
+// array spread
+let b=[1,2,3,4,5];
+let c=[4,5];
+console.log(...b,...c);
+
+
 
 
 
