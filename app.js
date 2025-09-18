@@ -108,7 +108,7 @@ console.log(sum(1,3));
 console.log(sum(1));  //undefine bcz order in parameter matters
 
 
-// spread ...
+// spread ... single sa multiple
 console.log(..."zumer niaz");
 
 
@@ -116,6 +116,70 @@ console.log(..."zumer niaz");
 let b=[1,2,3,4,5];
 let c=[4,5];
 console.log(...b,...c);
+
+
+// object with spread
+const da={
+    name:"zumer",
+    marks:44,
+
+
+};
+const pa={...da,id:123};
+console.log(pa);
+
+// indexes
+let r=[1,2,3,4,5];
+let obj={...r};
+console.log(obj);
+
+
+
+// rest ...(multiple sa single)
+function ad(...args){
+    for(let i=0;i<args.length;i++){
+        console.log("You gave value : ",args[i]);
+    }
+}
+console.log(ad(1));
+console.log(ad(2));
+
+
+
+
+function plus(...args){
+    return args.reduce((sum,el)=>sum+el);
+}
+console.log(plus(2,2,2,2));
+
+
+
+
+// destructuring 
+let names=["zumer","niaz","alishba"];
+// let first=names[0];
+// let second=names[1];
+// let third=names[2];
+let [first,...others]=names;
+console.log(first);
+console.log(others); //baki sab
+
+
+
+
+// object destructure
+let s1={
+    name:"zumer",
+    marks:22,
+};
+const {marks:mark,name:nam}=s1;
+console.log(mark); //right wala likhna jo new variable bnaya
+
+
+
+
+
+
 
 
 
